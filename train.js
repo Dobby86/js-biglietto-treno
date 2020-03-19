@@ -1,4 +1,5 @@
 //chiedo km da percorrere
+
 var kmDaPercorrere = prompt ("chiedere km");
 
 //chiedo eta:
@@ -33,10 +34,16 @@ var prezzoBigliettoFinale  = "io non ho valore";
 
     prezzoBigliettoFinale = prezzoScontato;
 
-} else {
+}else {
 
     // altrimenti il prezzo finale del biglietto è quello di base
-    prezzoBigliettoFinale = prezzoBiglietto;
+     prezzoBigliettoFinale = prezzoBiglietto;
+}
+
+if (eta > 18 && eta < 65); {
+   console.log ("eta senza sconto");
+   prezzoBigliettoFinale = prezzoBiglietto;
+
 }
 
 document.getElementById("generator").innerHTML = prezzoBigliettoFinale;
